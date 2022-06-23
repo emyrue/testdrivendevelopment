@@ -1,6 +1,6 @@
 class Solver
   def factorial(number)
-    if number < 0
+    if number.negative?
       'undefined'
     elsif number <= 1
       1
