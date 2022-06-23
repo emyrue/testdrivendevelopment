@@ -4,7 +4,6 @@ describe Solver do
   context 'Testing solver methods' do
     before :each do
       @solver = Solver.new
-      allow(@solver).to receive(:fizzbuzz)
     end
 
     it 'Factorial returns correct answer' do
@@ -25,6 +24,10 @@ describe Solver do
 
     it 'checks for fizz' do
       expect(@solver.fizzbuzz(3)).to eq 'fizz'
+    end
+
+    it 'checks for string' do
+      expect(@solver.fizzbuzz(7)).to eq '7'
     end
   end
 end
