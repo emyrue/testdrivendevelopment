@@ -10,6 +10,14 @@ describe Solver do
       expect(@solver.factorial(4)).to eq 24
     end
 
+    it 'Factorial returns 1 for 0' do
+      expect(@solver.factorial(0)).to eq 1
+    end
+
+    it 'Factorial returns undefined for negative numbers' do
+      expect(@solver.factorial(-4)).to eq 'undefined'
+    end
+
     it 'Reverses string' do
       expect(@solver.reverse('Hello')).to eq 'olleH'
     end
