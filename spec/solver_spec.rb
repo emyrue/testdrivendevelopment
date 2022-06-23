@@ -10,7 +10,7 @@ describe Solver do
       expect(@solver.factorial(4)).to eq 24
     end
 
-    it 'Reverses string' do 
+    it 'Reverses string' do
       expect(@solver.reverse('Hello')).to eq 'olleH'
     end
 
